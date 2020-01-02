@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'XFLNetwork_Example' do
+  pod 'XFLNetwork', :path => '../'
+
+  target 'XFLNetwork_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

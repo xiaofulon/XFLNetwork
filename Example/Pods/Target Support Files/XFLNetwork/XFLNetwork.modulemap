@@ -1,0 +1,6 @@
+framework module XFLNetwork {
+  umbrella header "XFLNetwork-umbrella.h"
+
+  export *
+  module * { export * }
+}

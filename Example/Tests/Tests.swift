@@ -1,5 +1,4 @@
 import XCTest
-import XFLNetwork
 
 class Tests: XCTestCase {
     

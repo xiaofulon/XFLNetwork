@@ -1,0 +1,29 @@
+{
+  "name": "XFLNetwork",
+  "version": "0.1.0",
+  "summary": "封装基于Alamofire的常用请求Api",
+  "description": "封装基于Alamofire的常用请求Api,方便项目中使用",
+  "homepage": "https://github.com/xiaofulon/XFLNetwork",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "xiaofulon": "13559487161@139.com"
+  },
+  "source": {
+    "git": "https://github.com/xiaofulon/XFLNetwork.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "swift_versions": "5",
+  "source_files": "XFLNetwork/Classes/**/*",
+  "dependencies": {
+    "Alamofire": [
+      "5.0.0-rc.3"
+    ]
+  },
+  "swift_version": "5"
+}

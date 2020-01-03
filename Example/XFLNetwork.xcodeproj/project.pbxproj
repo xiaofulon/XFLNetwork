@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		11CE11FE9880E12970FBB4E0 /* Pods-XFLNetwork_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XFLNetwork_Example.release.xcconfig"; path = "Target Support Files/Pods-XFLNetwork_Example/Pods-XFLNetwork_Example.release.xcconfig"; sourceTree = "<group>"; };
-		193E4B06878390AE5E57DEDD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		193E4B06878390AE5E57DEDD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		382C4D52C5A663CE0D4FC3B4 /* Pods-XFLNetwork_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XFLNetwork_Tests.release.xcconfig"; path = "Target Support Files/Pods-XFLNetwork_Tests/Pods-XFLNetwork_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		586568A2EAC29AC2F9EAA61E /* Pods-XFLNetwork_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XFLNetwork_Example.debug.xcconfig"; path = "Target Support Files/Pods-XFLNetwork_Example/Pods-XFLNetwork_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* XFLNetwork_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XFLNetwork_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,11 +42,11 @@
 		607FACE51AFB9204008FA782 /* XFLNetwork_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XFLNetwork_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		6A5B43C8885EF3B6DACECD25 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		6A5B43C8885EF3B6DACECD25 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		79B9C68F5DA35723818DB8D9 /* Pods_XFLNetwork_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XFLNetwork_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9163DADB3AFCEC22D06B4434 /* Pods_XFLNetwork_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XFLNetwork_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4ABF7BD930D970652599813 /* Pods-XFLNetwork_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XFLNetwork_Tests.debug.xcconfig"; path = "Target Support Files/Pods-XFLNetwork_Tests/Pods-XFLNetwork_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E724DACEE73CCB7D6BE1913B /* XFLNetwork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = XFLNetwork.podspec; path = ../XFLNetwork.podspec; sourceTree = "<group>"; };
+		E724DACEE73CCB7D6BE1913B /* XFLNetwork.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XFLNetwork.podspec; path = ../XFLNetwork.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,7 +156,6 @@
 				C4ABF7BD930D970652599813 /* Pods-XFLNetwork_Tests.debug.xcconfig */,
 				382C4D52C5A663CE0D4FC3B4 /* Pods-XFLNetwork_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -213,6 +212,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = MYGTG3HANR;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -227,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -313,10 +314,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-XFLNetwork_Example/Pods-XFLNetwork_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/XFLNetwork/XFLNetwork.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XFLNetwork.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,7 +481,9 @@
 			baseConfigurationReference = 586568A2EAC29AC2F9EAA61E /* Pods-XFLNetwork_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MYGTG3HANR;
 				INFOPLIST_FILE = XFLNetwork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -493,7 +498,9 @@
 			baseConfigurationReference = 11CE11FE9880E12970FBB4E0 /* Pods-XFLNetwork_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MYGTG3HANR;
 				INFOPLIST_FILE = XFLNetwork/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

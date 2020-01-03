@@ -1,0 +1,23 @@
+PODS:
+  - Alamofire (5.0.0-rc.3)
+  - XFLNetwork (0.1.0):
+    - Alamofire (= 5.0.0-rc.3)
+
+DEPENDENCIES:
+  - XFLNetwork (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs:
+    - Alamofire
+
+EXTERNAL SOURCES:
+  XFLNetwork:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
+  XFLNetwork: 0b0d0e94da44c7f35274657a9715f843e3169285
+
+PODFILE CHECKSUM: 8abdc7abaf715f67b60202e762430bca32792f3d
+
+COCOAPODS: 1.8.4
